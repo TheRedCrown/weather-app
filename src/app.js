@@ -8,6 +8,8 @@ const forecast = require('./utils/forecast');
 // Запускаем функцию Exspress.js
 const app = express()
 
+const port = process.env.PORT || 3000
+
 // Создаем пути к директориям
 const publicDirPath = path.join(__dirname, '../public') // Выходим из папки src в папку public
 const templatesDirPath = path.join(__dirname, '../templates/views') // Выходим из папки src в папку templates/views
@@ -88,6 +90,6 @@ app.get('*', (req, res) => {
 })
 
 // Запускаем сервер по заданному порту
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is running on port 3000')
 })
