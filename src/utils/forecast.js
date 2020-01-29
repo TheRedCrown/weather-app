@@ -13,7 +13,7 @@ const forecast = (a, b, callback) => {
             const tmp = currently.temperature
             const chanceRain = currently.precipProbability
 
-            callback(undefined, body.daily.data[0].summary + " Сейчас " + tmp + '℃, шанс осадков составляет ' + chanceRain + "%.")
+            callback(undefined, body.daily.data[0].summary + " Сейчас " + tmp + '℃, шанс осадков составляет ' + chanceRain + "%. Скорость ветра - "+ body.daily.data[0].windSpeed + 'м/с.')
         }
     });
 }
