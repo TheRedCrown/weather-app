@@ -10,7 +10,6 @@ body {
 a {
     color: grey;
     text-decoration: none;
-    font-size: 20px;
     border-radius: 5px;
 }
 a:hover {
@@ -89,7 +88,8 @@ form button:hover {
         margin-top: 10px;
     }
     .navigation a {
-        margin: 0 10px
+        margin: 0 10px;
+        font-size: 16px;
     }
     header {
         height: 100px;
@@ -122,6 +122,7 @@ form button:hover {
     }
     .navigation a {
         margin: 0 10px;
+        font-size: 20px;
     }
     header {
         height: 70px;
