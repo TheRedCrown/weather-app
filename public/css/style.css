@@ -43,7 +43,6 @@ header {
     width: 60%;
 }
 h1 {
-    font-size: 50px;
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -102,6 +101,12 @@ form button:hover {
     #message2 {
         text-align: center;
     }
+    .central {
+        text-align: center;
+    }
+    .central h1 {
+        font-size: 36px;
+    }
   }
 @media only screen and (min-width: 480px) {
     .navigation {
@@ -115,5 +120,8 @@ form button:hover {
     }
     .wrap {
         flex-direction: row;
+    }
+    .central h1 {
+        font-size: 50px;
     }
 }
