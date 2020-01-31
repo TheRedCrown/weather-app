@@ -83,7 +83,7 @@ form button:hover {
     background-color: #E0E0E0;
 }
 
-@media (min-width: 0px) {
+@media only screen and (min-width: 0px) {
     .wrap {
       flex-direction: column;
     }
@@ -103,7 +103,7 @@ form button:hover {
         text-align: center;
     }
   }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
     .navigation {
         margin: 0;
     }
