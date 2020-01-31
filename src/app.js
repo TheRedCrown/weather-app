@@ -28,21 +28,21 @@ app.use(express.static(publicDirPath))
 // Рендерим файл index.hbs в папке templates/views, по заданному роутингу
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Home'
+        title: 'Главная'
     })
 })
 
 // Рендерим файл help.hbs в папке templates/views, по заданному роутингу
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Help'
+        title: 'Помощь'
     })
 })
 
 // Рендерим файл about.hbs в папке templates/views, по заданному роутингу
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About'
+        title: 'Обо мне'
     })
 })
 
@@ -78,14 +78,14 @@ app.get('/weather', (req, res) => {
 // Рендерим файл 404.hbs в папке templates/views, по заданному роутингу
 app.get('/help/*', (req, res) => {
     res.render('404', {
-        error: 'Article not found'
+        error: 'Статья не найдена.'
     })
 })
 
 // Рендерим файл 404.hbs в папке templates/views, по заданному роутингу
 app.get('*', (req, res) => {
     res.render('404', {
-        error: 'Page not found'
+        error: 'Увы, такой страницы нету.'
     })
 })
 

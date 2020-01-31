@@ -61,7 +61,6 @@ form {
     justify-content: center;
 }
 form input {
-    margin: 0 5px;
     border-radius: 3px;
     box-shadow: none;
     border: 2px solid #F3F3F3;
@@ -107,6 +106,15 @@ form button:hover {
     .central h1 {
         font-size: 36px;
     }
+    form {
+        flex-direction: column;
+    }
+    form input {
+        margin-bottom: 10px;
+    }
+    form button {
+        margin: 0;
+    }
   }
 @media only screen and (min-width: 480px) {
     .navigation {
@@ -123,5 +131,11 @@ form button:hover {
     }
     .central h1 {
         font-size: 50px;
+    }
+    form {
+        flex-direction: row;
+    }
+    form input {
+        margin: 0 5px;
     }
 }
